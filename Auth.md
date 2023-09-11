@@ -118,4 +118,4 @@ Elimina el token indicado en la autenticación del almacén de datos.
 Si el token es válido y la sesión se pudo eliminar.
 
 ##### `401`
-Si el token está expirado o el formato no es válido.
+Si el token no es válido.
