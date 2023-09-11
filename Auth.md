@@ -32,6 +32,17 @@
 
 Recibe name, username y password como mínimo y crea el usuario.
 
+#### Respuesta
+
+```json
+{
+	"name": "string",
+	"username": "string",
+	"id": "string",
+	"created": 23472384893
+}
+```
+
 ### Obtener Usuario actual
 
 `GET /user/current`
