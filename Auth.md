@@ -77,6 +77,14 @@ Crea un token (`Session`) nuevo y lo devuelve.
 |---|---|
 |`Authorization: Basic xxx`|Credenciales en formato basic (`"user:password"` en base64).|
 
+#### Respuesta
+
+```json
+{
+	"token": "JWT string",
+}
+```
+
 ### Logout
 
 `POST /user/logout`
