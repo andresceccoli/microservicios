@@ -34,6 +34,8 @@ Recibe name, username y password como mínimo y crea el usuario.
 
 #### Respuesta
 
+##### `201`
+
 ```json
 {
 	"name": "string",
@@ -42,6 +44,10 @@ Recibe name, username y password como mínimo y crea el usuario.
 	"created": 23472384893
 }
 ```
+
+##### `400`
+Si algún atributo falta.
+
 
 ### Obtener Usuario actual
 
@@ -57,6 +63,8 @@ Obtiene el usuario actual desde el almacén de datos a partir del token autentic
 
 #### Respuesta
 
+##### `200`
+
 ```json
 {
 	"name": "string",
@@ -65,6 +73,9 @@ Obtiene el usuario actual desde el almacén de datos a partir del token autentic
 	"created": 23472384893
 }
 ```
+
+##### `401`
+Si el token está expirado o el formato no es válido.
 
 ### Login
 
@@ -79,11 +90,16 @@ Crea un token (`Session`) nuevo y lo devuelve.
 
 #### Respuesta
 
+##### `200`
+
 ```json
 {
 	"token": "JWT string",
 }
 ```
+
+##### `401`
+Si las credenciales son incorrectas.
 
 ### Logout
 
@@ -95,3 +111,11 @@ Elimina el token indicado en la autenticación del almacén de datos.
 |Cabecera|Contenido|
 |---|---|
 |`Authorization: Bearer xxx`|Token en formato JWT|
+
+#### Respuesta
+
+##### `200`
+Si el token es válido y la sesión se pudo eliminar.
+
+##### `401`
+Si el token está expirado o el formato no es válido.
