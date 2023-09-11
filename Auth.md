@@ -54,6 +54,18 @@ Obtiene el usuario actual desde el almacén de datos a partir del token autentic
 |---|---|
 |`Authorization: Bearer xxx`|Token en formato JWT|
 
+
+#### Respuesta
+
+```json
+{
+	"name": "string",
+	"username": "string",
+	"id": "string",
+	"created": 23472384893
+}
+```
+
 ### Login
 
 `POST /user/login`
