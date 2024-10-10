@@ -1,0 +1,26 @@
+{
+  "name": "msevents",
+  "version": "1.0.0",
+  "description": "Sistema de inscripcion a eventos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresceccoli/microservicios.git"
+  },
+  "author": "Andres Ceccoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresceccoli/microservicios/issues"
+  },
+  "homepage": "https://github.com/andresceccoli/microservicios#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^5.0.7",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
